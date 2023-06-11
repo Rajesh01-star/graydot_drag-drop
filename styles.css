@@ -88,10 +88,28 @@ i:hover{
   border: 2px solid red;
   height: 4rem;
 }
-.marquee {
-  width: 100%;
+marquee {
+  width: 80%;
+  overflow: hidden;
 }
 
 #marqueeImage {
   height: 4rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 30rem;
+  }
 }
