@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  column-gap: 10rem;
+}
+.container {
+  border: 2px solid black;
+  box-shadow: -4px 10px black;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 30rem;
+  min-height: 10rem;
+  max-height: 15rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 0.8rem;
+  overflow: auto;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  cursor: move;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+  display: flex
+}
+
+.draggable.dragging {
+  opacity: .5;
+}
+
+button{
+  padding: .6rem;
+  width: 6rem;
+  border-radius: 1.2rem;
+  border: 1px solid black;
+  cursor: pointer;
+  box-shadow: -4px 6px black;
+  background-color: white;
+}
+button:hover{
+  transform: translate(-3px,1px);
+  box-shadow: -2px 6px black;
+  background-color: in;
+}
+
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 4rem;
+}
+.bottomBar ul{
+  width: 10%;
+  display: flex;
+  justify-content: start;
+  column-gap: 2rem;
+}
+i{
+  font-size: 1.6rem;
+  color: black;
+}
+i:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.bottomBar div{
+  width: 90%;
+  border: 2px solid red;
+  height: 4rem;
+}
+.marquee {
+  width: 100%;
+}
+
+#marqueeImage {
+  height: 4rem;
+}
